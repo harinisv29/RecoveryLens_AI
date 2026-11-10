@@ -1,0 +1,19 @@
+{
+  "method": "platt",
+  "intercept": 0.06978934346626024,
+  "slope": 1.1640831763468513,
+  "optimizer_success": true,
+  "gradient_norm": 2.59177333084922e-10,
+  "model": "xgboost",
+  "source_run": "full_20261110",
+  "checkpoint_sha256": "64ee8e846a6e5999fba05fb0bb3ad9c5f379fa4646dd60b2d8c19ea10eab73e8",
+  "selection": "Lowest five-fold patient-group cross-fitted validation Brier; identity included",
+  "validation_oof_brier": {
+    "identity": 0.137868534367691,
+    "platt": 0.1377572991066944,
+    "isotonic": 0.1392831248945473
+  },
+  "fit_cases": 952,
+  "fit_patients": 917,
+  "fit_scope": "Validation only; validation also used during base-model selection, so CV is not an independent outer validation"
+}

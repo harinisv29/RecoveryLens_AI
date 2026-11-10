@@ -1,0 +1,15 @@
+{
+  "method": "identity",
+  "model": "transformer",
+  "source_run": "full_20261110",
+  "checkpoint_sha256": "a10087ad745fd0a6d9a5c63097f4ddbaae524fadbc3b6d75399b4507e69486ec",
+  "selection": "Lowest five-fold patient-group cross-fitted validation Brier; identity included",
+  "validation_oof_brier": {
+    "identity": 0.11827801739133391,
+    "platt": 0.11869204934030818,
+    "isotonic": 0.11881444524290526
+  },
+  "fit_cases": 952,
+  "fit_patients": 917,
+  "fit_scope": "Validation only; validation also used during base-model selection, so CV is not an independent outer validation"
+}

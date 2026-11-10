@@ -1,0 +1,2 @@
+# Additive research extension; install alongside the existing environment.
+pypdf>=5,<7

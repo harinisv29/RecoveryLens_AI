@@ -1,0 +1,114 @@
+{
+  "validation": {
+    "sensitivity": 0.6294642857142857,
+    "specificity": 0.8186813186813187,
+    "n": 952,
+    "auroc": 0.7992359203296704,
+    "auprc": 0.5861419056359957,
+    "accuracy": 0.7741596638655462,
+    "precision": 0.5164835164835165,
+    "recall": 0.6294642857142857,
+    "f1": 0.5674044265593562,
+    "confusion_matrix": [
+      [
+        596,
+        132
+      ],
+      [
+        83,
+        141
+      ]
+    ],
+    "brier_score": 0.1378685332810308,
+    "threshold": 0.3,
+    "calibration": {
+      "observed": [
+        0.05235602094240838,
+        0.08421052631578947,
+        0.1631578947368421,
+        0.3105263157894737,
+        0.5654450261780105
+      ],
+      "predicted": [
+        0.08240757371586654,
+        0.11956467640243079,
+        0.17259552557217447,
+        0.29429501820551723,
+        0.5693999929889959
+      ]
+    }
+  },
+  "test": {
+    "sensitivity": 0.6323024054982818,
+    "specificity": 0.788826815642458,
+    "n": 1186,
+    "auroc": 0.7982721879859471,
+    "auprc": 0.5842100603504565,
+    "accuracy": 0.7504215851602024,
+    "precision": 0.4932975871313673,
+    "recall": 0.6323024054982818,
+    "f1": 0.5542168674698795,
+    "confusion_matrix": [
+      [
+        706,
+        189
+      ],
+      [
+        107,
+        184
+      ]
+    ],
+    "brier_score": 0.14394664198648513,
+    "threshold": 0.3,
+    "calibration": {
+      "observed": [
+        0.046218487394957986,
+        0.10126582278481013,
+        0.17721518987341772,
+        0.3080168776371308,
+        0.5949367088607594
+      ],
+      "predicted": [
+        0.08163290431707346,
+        0.1270367041984691,
+        0.1890306335084046,
+        0.32337821686821144,
+        0.5996535028083415
+      ]
+    },
+    "bootstrap_95_ci": {
+      "method": "Patient-cluster percentile bootstrap; conditional on fitted model and fixed endpoint",
+      "confidence_level": 0.95,
+      "seed": 42,
+      "requested": 2000,
+      "valid_resamples": 2000,
+      "single_class_skipped": 0,
+      "patient_clusters": 1146,
+      "auroc": [
+        0.7705922507842589,
+        0.826053237497955
+      ],
+      "auprc": [
+        0.5299933911786151,
+        0.6398656621337981
+      ]
+    }
+  },
+  "cohort_size": 6119,
+  "target_days": 7.396099537037037,
+  "training_seconds": 0.38203079998493195,
+  "device": "cuda",
+  "run": "full_20261110",
+  "checkpoint": "models\\checkpoints\\full_20261110\\xgboost.json",
+  "seed": 42,
+  "best_iteration": 244,
+  "gpu": "NVIDIA GeForce RTX 4070 SUPER",
+  "dataset_sha256": "46fb7d80002482df9ddcbef3788b8d3daa68c006c5a2fedf82161da54fa8f230",
+  "training_config": {
+    "n_estimators": 300,
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "early_stopping_rounds": 15,
+    "tree_method": "hist"
+  }
+}

@@ -1,0 +1,12 @@
+flask>=3.0,<4
+numpy>=1.26,<3
+pandas>=2.2,<3
+scikit-learn>=1.4,<2
+matplotlib>=3.8,<4
+torch>=2.3,<3
+xgboost>=2,<4
+vitaldb>=1.5,<2
+requests>=2.31,<3
+reportlab>=4,<6
+pytest>=8,<10
+playwright>=1.50,<2

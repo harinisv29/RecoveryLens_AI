@@ -1,0 +1,24 @@
+{
+  "run": "full_20261110",
+  "model": "transformer",
+  "checkpoint": "models\\checkpoints\\full_20261110\\transformer.pt",
+  "sha256": "a10087ad745fd0a6d9a5c63097f4ddbaae524fadbc3b6d75399b4507e69486ec",
+  "selection_policy": "Highest validation AUROC; tie-break lowest validation Brier score; test results not used",
+  "validation_candidates": {
+    "transformer": {
+      "auroc": 0.8548309948979591,
+      "auprc": 0.6825673805104863,
+      "brier_score": 0.11827801739133391
+    },
+    "gru": {
+      "auroc": 0.8454486361852434,
+      "auprc": 0.6588496623823555,
+      "brier_score": 0.12428368170693099
+    },
+    "xgboost": {
+      "auroc": 0.7992359203296704,
+      "auprc": 0.5861419056359957,
+      "brier_score": 0.1378685332810308
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.venv/
+__pycache__/
+.pytest_cache/
+data/raw/*
+data/processed/*
+models/checkpoints/*
+*.log
+results/.matplotlib/
+
+# Local credentials and development artifacts
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.bak
+.DS_Store
+Thumbs.db
+
+# Download inventories and local dataset archives (regenerate from VitalDB)
+data/metadata/tracks.csv
+data/metadata/full_download_tracks.jsonl
+results/runs/initial_127/data/processed/
+results/runs/initial_127/models/checkpoints/
+
+# Ship only the frozen live model and its saved normalization.
+!models/checkpoints/full_20261110/
+models/checkpoints/full_20261110/*
+!models/checkpoints/full_20261110/transformer.pt
+!data/processed/full_20261110/
+data/processed/full_20261110/*
+!data/processed/full_20261110/preprocessing.json
+
+# Public repository: keep patient-level datasets and evidence local.
+data/*
+!data/processed/
+results/*
+!results/TRANSFORMER_ACCURACY_REPORT.md
+!results/RESEARCH_VALIDATION_REPORT.md
+!results/runs/
+results/runs/*
+!results/runs/full_20261110/
+results/runs/full_20261110/*
+!results/runs/full_20261110/model_selection.json
+!results/runs/full_20261110/metrics/

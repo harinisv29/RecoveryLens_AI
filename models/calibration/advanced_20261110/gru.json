@@ -1,0 +1,15 @@
+{
+  "method": "identity",
+  "model": "gru",
+  "source_run": "full_20261110",
+  "checkpoint_sha256": "1a36adb03ee424907da51167949516af172bde38f79685425dda4aab2fd9c4b0",
+  "selection": "Lowest five-fold patient-group cross-fitted validation Brier; identity included",
+  "validation_oof_brier": {
+    "identity": 0.12428368170693099,
+    "platt": 0.12462916423837064,
+    "isotonic": 0.12539397334608762
+  },
+  "fit_cases": 952,
+  "fit_patients": 917,
+  "fit_scope": "Validation only; validation also used during base-model selection, so CV is not an independent outer validation"
+}
